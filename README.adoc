@@ -1,0 +1,19 @@
+Generate the ninja build files and run all tests
+```
+cd build
+cmake -GNinja ..
+ninja test
+```
+
+To run a single test (or tests matching patterns): 
+
+```
+cd build
+ninja && src/module1_test --gtest_filter=Module1Test.Dude
+```
+
+== References
+
+* https://cliutils.gitlab.io/modern-cmake/chapters/testing/googletest.html
+* https://github.com/adkri/penguin/blob/master/CMakeLists.txt
+* https://www.youtube.com/watch?v=AtirFScWPok
